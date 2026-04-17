@@ -60,7 +60,7 @@ Our results outlined here made it possible to determine the structure of mechani
 
 For the sake of uniqueness wholly formal definitions will be given below.  Further motivations and clarifications, if necessary, may be found in e.g.\ \cite{Feinberg1977}, \cite{HornJackson1972} and \cite{TothErdi1978}.
 
-Let $M, N \in \N$;\; $S :=\{A(1), \ldots, A(M)\}$.  ($A(m)$ is the symbol of the $m$-th \emph{chemical component};\; $m \in \{1,2,\ldots,M\}$.)  Let us given the set\footnote{$\Nz := \N \cup \{0\}$ is the set of nonnegative integers.} $T := \{C(1), \ldots, C(N)\} \subset \Nz^{\,C}$, the elements of which are called \emph{complexes}, and the set $R \subset T \times T$, the elements of which are called \emph{elementary reactions}.  If $(C(j), C(i)) \in R$, then to write $C(j) \to C(i)$ is preferred and it is said that the \emph{reactant} complex $C(j)$ is transformed into the \emph{product} complex $C(i)$.  It can be assumed that all of the complexes take part in a reaction, i.e.\ for every $n \in \{1,2,\ldots,N\}$ there is an $i \in \{1,2,\ldots,N\}$, such that either $C(i) \to C(n)$ or $C(n) \to C(i)$ is fulfilled.
+Let $M, N \in \N$;\; $S :=\{A(1), \ldots, A(M)\}$.  ($A(m)$ is the symbol of the $m$-th \emph{chemical component};\; $m \in \{1,2,\ldots,M\}$.)  Let us given the set\footnote{$\Nz := \N \cup \{0\}$ is the set of nonnegative integers.} $T := \{C(1), \ldots, C(N)\} \subset \Nz^{\,M}$, the elements of which are called \emph{complexes}, and the set $R \subset T \times T$, the elements of which are called \emph{elementary reactions}.  If $(C(j), C(i)) \in R$, then to write $C(j) \to C(i)$ is preferred and it is said that the \emph{reactant} complex $C(j)$ is transformed into the \emph{product} complex $C(i)$.  It can be assumed that all of the complexes take part in a reaction, i.e.\ for every $n \in \{1,2,\ldots,N\}$ there is an $i \in \{1,2,\ldots,N\}$, such that either $C(i) \to C(n)$ or $C(n) \to C(i)$ is fulfilled.
 
 The natural basis $\mathscr{B}$ of $\R^S$ is formed by the functions $\omega_{A(m)}$ such that
 \[
@@ -141,7 +141,7 @@ $(t \in D_x)$, where
     z_1 & 0 & \cdots & 0 \\
     0 & z_2 &        & 0 \\
       &     & \ddots &   \\
-    0 & \cdots &      & 0\,z_N
+    0 & \cdots &      & z_N
   \end{pmatrix}
   \in \R^{N \times N}
 \]
@@ -270,7 +270,7 @@ The canonic mechanism attached to \eqref{eq:example} is:
 
 % Middle tree
 \node [right=4cm of top1] (top2) {$4Z$};
-\node [below left=1.2cm and 0.5cm of top2] (bl2) {$Y$};
+\node [below left=1.2cm and 0.5cm of top2] (bl2) {$X+4Z$};
 \node [below right=1.2cm and 0.5cm of top2] (br2) {$4Z+V$};
 \node [below=2.4cm of top2] (bot2) {$3Z$};
 
@@ -382,6 +382,6 @@ A.I.~Vol'pert, Differential equations on graphs (in Russian), \emph{Mat.\ sborni
 V.~H\'ars -- J.~T\'oth\\
 Computing Group\\
 Semmelweis University Medical School\\
-Kulich Gyular t\'er~5, H-1089 Budapest, Hungary
+Kulich Gyula t\'er~5, H-1089 Budapest, Hungary
 
 \end{document}
